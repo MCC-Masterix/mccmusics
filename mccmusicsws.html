@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html class="title" id="html" style='border:1px #888 solid; border-radius:8px;margin:30px;'>
+<head>
+<title>MCC MUSICS</title>
+
+<h1 style='color:white;user-select:none;padding:3px;text-align:center;background-color:#3f3f3f;border-radius:8px'>MCC MUSICS</h1>
+<fieldset id="socialmedia">
+<legend style='font-size:20px;'>Social Media</legend>
+</fieldset>
+
+<p class="headline">Newest releases by MTX666 & iZuna!</p>
+<iframe width="430" height="325" style="border:none"
+src="https://www.youtube.com/embed/W7U-eqSGy7c">
+</iframe>
+<iframe width="430" height="325" style="border:none"
+src="https://www.youtube.com/embed/qwQRQbDgbmg">
+</iframe>
+<iframe width="430" height="325" style="border:none"
+src="https://www.youtube.com/embed/6EqcAuT5DA0">
+</iframe>
+
+<button class="button" id="yt">YouTube</button>
+<div class="selectyt" id="selectanartistYT">Select an artist</div>
+<button id="ytmtx666" class="YTmtx666">MTX666</button>
+<button id="ytizuna" class="YTizuna">iZuna</button>
+<button class="button" id="sc">SoundCloud</button>
+<button class="button" id="ig">Instagram</button>
+<button class="button2" id="mail">E-Mail</button>
+
+
+
+<style>
+.title {
+background: #0f0f0f;
+font-family:System-ui;
+}
+FIELDSET{
+border-radius: 10px;
+background-color:#181919;
+user-select:none;
+border:none;
+height:180px;
+width:500px;
+margin:auto;
+color:white;
+font-size:16px;
+font-weight:bold;
+}
+.YTmtx666 {
+background: #262726;
+border-radius:8px;
+border:none;
+width:110px;
+margin:5px;
+padding:5px;
+color:white;
+cursor:pointer;
+}
+.YTizuna {
+background: #262726;
+border-radius:8px;
+border:none;
+width:110px;
+margin:5px;
+padding:5px;
+color:white;
+cursor:pointer;
+}
+.selectyt {
+transition: .2s;
+background: #3e3e3e;
+width:120px;
+border-radius:8px;
+color:white;
+font-weight:bold;
+padding:5px;
+margin-top:5px;
+margin-bottom:5px;
+}
+.button {
+border-radius:8px;
+background: #262726;
+border:none;
+font-size:20px;
+color:white;
+padding:5px;
+margin:5px;
+cursor:pointer;
+}
+.button2 {
+border-radius:8px;
+background: #262726;
+border:1px #888 solid;
+font-size:20px;
+color:white;
+padding:4px;
+margin:5px;
+cursor:pointer;
+}
+.headline {
+font-family:System-ui;
+font-weight:bold;
+font-size:28px;
+text-align:center;
+margin-top:50px;
+margin-bottom:30px;
+color:white;
+padding:10px;
+border-bottom:1px solid;
+}
+</style>
+
+<script>
+var ytselect = false;
+document.getElementById('selectanartistYT').style.display='none';
+
+document.getElementById('socialmedia').appendChild(yt);
+document.getElementById('socialmedia').appendChild(sc);
+document.getElementById('socialmedia').appendChild(ig);
+document.getElementById('socialmedia').appendChild(mail);
+document.getElementById('socialmedia').appendChild(selectanartistYT);
+
+document.getElementById('selectanartistYT').appendChild(ytmtx666);
+document.getElementById('selectanartistYT').appendChild(ytizuna);
+document.getElementById('yt').addEventListener('click',function() {
+if (ytselect == false){
+document.getElementById('selectanartistYT').style.display='block';
+ytselect = true;
+}
+else if (ytselect == true){
+document.getElementById('selectanartistYT').style.display='none';
+ytselect = false;
+}
+        });
+document.getElementById('selectanartistYT').addEventListener('click',function() {
+
+document.getElementById('selectanartistYT').style.display='none';
+
+        });
+
+</script>
+</head>
+
+</html>
