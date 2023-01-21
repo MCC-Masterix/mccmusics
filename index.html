@@ -1,56 +1,283 @@
-<!DOCTYPE html>
-<html class="title" id="html" style='border:1px #888 solid; border-radius:8px;margin:30px;'>
-<head>
-<title>MCC MUSICS</title>
 
-<h1 style='color:white;user-select:none;padding:3px;text-align:center;background-color:#3f3f3f;border-radius:8px'>MCC MUSICS</h1>
-<fieldset id="socialmedia">
+<!DOCTYPE html>
+<html class="title" id="html1" style='border-radius:8px;'>
+    <head>
+      </head>
+  <div style="width:100%;height:100%;background-color:black;z-index:99999;">
+        <fieldset id="mailpage" class="mailpagecss">
+        <label style='font-size:24px;width:100%;'>Copy mail address?</label>
+        <input id="emailtextbox" value="mtx6x6x6@gmail.com" style="text-align:center;margin-top:30px;width:70%;border:1px solid;" readonly></input>
+        <button class="button" style="width:30%;height:15%;margin-top:30px;" onclick="copythetext()">Copy</button>
+        <button id="cancelmailbox" class="button" style="width:30%;height:15%;margin-top:30px;background:rgb(116, 0, 0)">Cancel</button>
+        </fieldset>
+  </div>
+
+<title >MCC MUSICS</title>
+<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+<img id="menusymbol" height="25" width="25" style="position:absolute;right:0;margin:35px;cursor:pointer;" src="https://i.ibb.co/h2NZmkw/image-removebg-preview-2023-01-21-T101104-419.png" alt="image-removebg-preview-2023-01-21-T101104-419" border="0">
+<div style="width:100%;height:100%;background-color:black;z-index:99999;">
+        <fieldset id="menupage" class="menupagecss">
+          <button style="background:transparent;margin-bottom:5px;width:88%;padding-left:40px;font-size:18px;color:white;border:none;">Menu</button>
+          <button style="background:transparent;margin-bottom:5px;font-weight:bold;padding-left:10px;font-size:18px;color:white;border:none;cursor:pointer" onClick="javascript:document.getElementById('menupage').style.display='none';menupageopen=false;">X</button>
+          <fieldset style="border:1px #888 solid;background:transparent;padding:20px;padding-top:5px;">
+                <legend>General</legend>
+          <button class="button" id="mail"style="width:100%;height:27%;margin-top:30px;margin:auto;margin-top:5px;margin-bottom:5px;" onclick="javascript:document.getElementById('menupage').style.display='none';menupageopen=false;">E-Mail</button>
+          <button class="button" style="width:100%;height:27%;margin-top:30px;margin:auto;margin-top:5px;margin-bottom:5px;" onClick="javascript:window.alert('Version:1.0\nCreator: MTX666\nYear of Website creation: 2023');document.getElementById('menupage').style.display='none';menupageopen=false;">Credits</button>
+          <button class="button" style="width:100%;height:27%;margin-top:30px;margin:auto;margin-top:5px;margin-bottom:5px;" onClick="javascript:document.getElementById('menupage').style.display='none';menupageopen=false;document.getElementById('hometab').style.display='none';document.getElementById('artiststab').style.display='none';document.getElementById('contacttab').style.display='block';">About</button>
+        </fieldset>
+        <fieldset style="border:1px #888 solid;background:transparent;padding:20px;padding-top:5px;opacity:30%;">
+        <legend>Settings</legend>
+          <button class="button" id="mail"style="width:100%;height:27%;margin-top:30px;margin:auto;margin-top:5px;margin-bottom:5px;cursor:default;">Themes</button>
+          <button class="button" style="width:100%;height:27%;margin-top:30px;margin:auto;margin-top:5px;margin-bottom:5px;cursor:default;">Languages</button>
+        </fieldset>
+          </fieldset>
+    </div>
+<div style='color:white;user-select:none;text-align:center;height:5%;width:50%;background-color:transparent;top:0%;border-radius:8px;padding:5px;'>
+        <h1 style="text-align:left;">MCC MUSICS</h1>
+</div>
+
+<div style="border-bottom:1px #888 solid;padding:5px;overflow:hidden;">
+        <button class="tabs" id="tab1">Home</button>
+        <button class="tabs" id="tab3">Supported Artists</button>
+        <button class="tabs" id="tab2">Contact</button>
+</div>
+
+<!--Start Home Tab-->
+<div id="hometab" style="background:rgb(24, 24, 24);border-radius:8px;">
+        <h2 class="headline">Home</h2>
+<fieldset id="socialmedia"style="display:none;">
 <legend style='font-size:20px;'>Social Media</legend>
 </fieldset>
 
-<p class="headline">Newest releases by MTX666 & iZuna!</p>
-<iframe width="430" height="325" style="border:none"
-src="https://www.youtube.com/embed/W7U-eqSGy7c">
-</iframe>
-<iframe width="430" height="325" style="border:none"
-src="https://www.youtube.com/embed/qwQRQbDgbmg">
-</iframe>
-<iframe width="430" height="325" style="border:none"
+<p class="cate">Newest release by MTX666!</p>
+<iframe style="border:none;border-radius:8px;margin-left:21%;" width="760" height="515" src="https://www.youtube.com/embed/9tv3hN0C7Y8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<h3 class="footline">More</h3>
+<iframe allowfullscreen width="430" height="325" style="border:none;border-radius:8px;"
 src="https://www.youtube.com/embed/6EqcAuT5DA0">
 </iframe>
+<iframe allowfullscreen width="430" height="325" style="border:none;border-radius:8px;"
+src="https://www.youtube.com/embed/W7U-eqSGy7c">
+</iframe>
+<iframe allowfullscreen width="430" height="325" style="border:none;border-radius:8px;"
+src="https://www.youtube.com/embed/qwQRQbDgbmg">
+</iframe>
 
-<button class="button" id="yt">YouTube</button>
-<div class="selectyt" id="selectanartistYT">Select an artist</div>
+<button class="button" id="yt"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1235 512">
+   <path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 
+    6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 
+    48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 
+    11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/>
+</svg>YouTube</button>
+
+<button class="selectlist" id="selectanartistYT">Select an artist<br>(YouTube)</button>
 <button id="ytmtx666" class="YTmtx666">MTX666</button>
-<button id="ytizuna" class="YTizuna">iZuna</button>
-<button class="button" id="sc">SoundCloud</button>
-<button class="button" id="ig">Instagram</button>
-<button class="button2" id="mail">E-Mail</button>
+<button id="ytizuna" class="YTizuna" style="opacity:50%;cursor:default">iZuna</button>
 
+<button class="button" id="sc"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500"><path d="M111.4 256.3l5.8 65-5.8 68.3c-.3 2.5-2.2 4.4-4.4 4.4s-4.2-1.9-4.2-4.4l-5.6-68.3 5.6-65c0-2.2 1.9-4.2 4.2-4.2 2.2 0 4.1 2 4.4 4.2zm21.4-45.6c-2.8 0-4.7 2.2-5 5l-5 105.6 5 68.3c.3 2.8 2.2 5 5 5 2.5 0 4.7-2.2 4.7-5l5.8-68.3-5.8-105.6c0-2.8-2.2-5-4.7-5zm25.5-24.1c-3.1 0-5.3 2.2-5.6 5.3l-4.4 130 4.4 67.8c.3 3.1 2.5 5.3 5.6 5.3 2.8 0 5.3-2.2 5.3-5.3l5.3-67.8-5.3-130c0-3.1-2.5-5.3-5.3-5.3zM7.2 283.2c-1.4 0-2.2 1.1-2.5 2.5L0 321.3l4.7 35c.3 1.4 1.1 2.5 2.5 2.5s2.2-1.1 2.5-2.5l5.6-35-5.6-35.6c-.3-1.4-1.1-2.5-2.5-2.5zm23.6-21.9c-1.4 0-2.5 1.1-2.5 2.5l-6.4 57.5 6.4 56.1c0 1.7 1.1 2.8 2.5 2.8s2.5-1.1 2.8-2.5l7.2-56.4-7.2-57.5c-.3-1.4-1.4-2.5-2.8-2.5zm25.3-11.4c-1.7 0-3.1 1.4-3.3 3.3L47 321.3l5.8 65.8c.3 1.7 1.7 3.1 3.3 3.1 1.7 0 3.1-1.4 3.1-3.1l6.9-65.8-6.9-68.1c0-1.9-1.4-3.3-3.1-3.3zm25.3-2.2c-1.9 0-3.6 1.4-3.6 3.6l-5.8 70 5.8 67.8c0 2.2 1.7 3.6 3.6 3.6s3.6-1.4 3.9-3.6l6.4-67.8-6.4-70c-.3-2.2-2-3.6-3.9-3.6zm241.4-110.9c-1.1-.8-2.8-1.4-4.2-1.4-2.2 0-4.2.8-5.6 1.9-1.9 1.7-3.1 4.2-3.3 6.7v.8l-3.3 176.7 1.7 32.5 1.7 31.7c.3 4.7 4.2 8.6 8.9 8.6s8.6-3.9 8.6-8.6l3.9-64.2-3.9-177.5c-.4-3-2-5.8-4.5-7.2zm-26.7 15.3c-1.4-.8-2.8-1.4-4.4-1.4s-3.1.6-4.4 1.4c-2.2 1.4-3.6 3.9-3.6 6.7l-.3 1.7-2.8 160.8s0 .3 3.1 65.6v.3c0 1.7.6 3.3 1.7 4.7 1.7 1.9 3.9 3.1 6.4 3.1 2.2 0 4.2-1.1 5.6-2.5 1.7-1.4 2.5-3.3 2.5-5.6l.3-6.7 3.1-58.6-3.3-162.8c-.3-2.8-1.7-5.3-3.9-6.7zm-111.4 22.5c-3.1 0-5.8 2.8-5.8 6.1l-4.4 140.6 4.4 67.2c.3 3.3 2.8 5.8 5.8 5.8 3.3 0 5.8-2.5 6.1-5.8l5-67.2-5-140.6c-.2-3.3-2.7-6.1-6.1-6.1zm376.7 62.8c-10.8 0-21.1 2.2-30.6 6.1-6.4-70.8-65.8-126.4-138.3-126.4-17.8 0-35 3.3-50.3 9.4-6.1 2.2-7.8 4.4-7.8 9.2v249.7c0 5 3.9 8.6 8.6 9.2h218.3c43.3 0 78.6-35 78.6-78.3.1-43.6-35.2-78.9-78.5-78.9zm-296.7-60.3c-4.2 0-7.5 3.3-7.8 7.8l-3.3 136.7 3.3 65.6c.3 4.2 3.6 7.5 7.8 7.5 4.2 0 7.5-3.3 7.5-7.5l3.9-65.6-3.9-136.7c-.3-4.5-3.3-7.8-7.5-7.8zm-53.6-7.8c-3.3 0-6.4 3.1-6.4 6.7l-3.9 145.3 3.9 66.9c.3 3.6 3.1 6.4 6.4 6.4 3.6 0 6.4-2.8 6.7-6.4l4.4-66.9-4.4-145.3c-.3-3.6-3.1-6.7-6.7-6.7zm26.7 3.4c-3.9 0-6.9 3.1-6.9 6.9L227 321.3l3.9 66.4c.3 3.9 3.1 6.9 6.9 6.9s6.9-3.1 6.9-6.9l4.2-66.4-4.2-141.7c0-3.9-3-6.9-6.9-6.9z"/></svg>SoundCloud</button>
+<button class="selectlist" id="selectanartistSC">Select an artist<br>(SoundCloud)</button>
+<button id="scmtx666" class="YTmtx666">MTX666</button>
+<button id="scizuna" class="YTizuna">iZuna</button>
 
+<button class="button" id="ig"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>Instagram</button>
+<button class="selectlist" id="selectanartistIG">Select an artist<br>(Instagram)</button>
+<button id="igmtx666" class="YTmtx666">MTX666</button>
+<button id="igizuna" class="YTizuna">iZuna</button>
+
+<button class="selectlist2" id="otherssocialmedia"><h4 style="font-size:18px">About the website</h4></button>
+<button id="masterixmusicbtn" class="YTmtx666" style="text-decoration:solid;width:42%;padding:3px;"> <a href="#scrolldown">Scroll Down </a></button>
+
+<h3 class="footline"></h3>
+</div>
+<!--End Home Tab-->
+
+<!--Start Artists Tab-->
+<div id="artiststab" style="background:rgb(24, 24, 24);border-radius:8px">
+        
+        <h2 class="headline">Artists/Beat Producer</h2>
+
+        <!--MTX666-->
+        <fieldset class="artistsfieldset">
+                <legend>MTX666</legend>
+<button class="button3" onClick="javascript:window.location.href='https://www.youtube.com/@mtx6662'">YouTube</button>
+<button class="button3" onClick="javascript:window.location.href='https://www.instagram.com/wxlfgang666_mcc/'">Instagram</button>
+<button class="button3" onClick="javascript:window.location.href='https://on.soundcloud.com/cfja9'">Soundcloud</button>
+<button style="width:100%;padding:5px;margin-top:5px;background:transparent;border:none;border-top:1px #888 solid;font-size:18px;color:white;">Artist since: <b>2022</b></button>
+        </fieldset>
+
+        <!--iZuna-->
+        <fieldset class="artistsfieldset">
+                <legend>iZuna</legend>
+                <button class="button3" onClick="javascript:window.location.href='https://www.youtube.com/@zyhairuziaz8937'">YouTube</button>
+                <button class="button3" onClick="javascript:window.location.href='https://www.instagram.com/xenzuna/'">Instagram</button>
+                <button class="button3" onClick="javascript:window.location.href='https://on.soundcloud.com/ipq8w'">Soundcloud</button>
+<button style="width:100%;padding:5px;margin-top:5px;background:transparent;border:none;border-top:1px #888 solid;font-size:18px;color:white;">Artist since: <b>2022</b></button>
+        </fieldset>
+
+        <!--CVRSED.DESIRE-->
+        <fieldset class="artistsfieldset">
+                <legend>cvrsed.desire</legend>
+                <button class="button3" onClick="javascript:window.location.href='https://www.youtube.com/@cvrsed.desire'">YouTube</button>
+                <button class="button3" onClick="javascript:window.location.href='https://www.instagram.com/lxnely.wish/'">Instagram</button>
+                <button class="button3" onClick="javascript:window.location.href='https://on.soundcloud.com/5TqLq'">Soundcloud</button>
+<button style="width:100%;padding:5px;margin-top:5px;background:transparent;border:none;border-top:1px #888 solid;font-size:18px;color:white;">Artist since: <b>2022</b></button>
+        </fieldset>
+
+        <!--KYOTO KAMI-->
+        <fieldset class="artistsfieldset">
+                <legend>KYOTO KAMI</legend>
+<button class="button3" onClick="javascript:window.location.href='https://www.youtube.com/@kyotokami9110'">YouTube</button>
+<button class="button3" onClick="javascript:window.location.href='https://www.instagram.com/kyoto.kami/'">Instagram</button>
+<button class="button3" onClick="javascript:window.location.href='https://on.soundcloud.com/w8WsS'">Soundcloud</button>
+<button style="width:100%;padding:5px;margin-top:5px;background:transparent;border:none;border-top:1px #888 solid;font-size:18px;color:white;">Beat Producer since: <b>2021</b></button>
+        </fieldset>
+
+        <!--Other artists coming soon...-->
+    <!--<fieldset class="artistsfieldset" style="opacity:30%;cursor:not-allowed">
+                <legend>Unknown</legend>
+<button class="button3">YouTube</button>
+<button class="button3">Instagram</button>
+<button class="button3">Soundcloud</button>
+<button style="width:100%;padding:5px;margin-top:5px;background:transparent;border:none;border-top:1px #888 solid;font-size:18px;color:white;">Artist since: <b>----</b></button>
+        </fieldset>-->
+        <h3 class="footline"></h3>
+        </div>
+<!--End Artists Tab-->
+
+<!--Start Contact Tab-->
+<div id="contacttab" style="background:rgb(24, 24, 24);border-radius:8px">
+        
+        <h2 class="headline">Contact</h2>
+        <h4 style="color:white;padding:10px">Discord: Masterix#9759<br>Instagram: wxlfgang666_mcc<br>Email: mtx6x6x6@gmail.com</h4>
+        <button class="button" onClick="javascript:window.location.href='https://www.youtube.com/@masterixmusic2886'">MasterixMusic (YouTube)</button>
+        <button class="button" onClick="javascript:window.location.href='https://on.soundcloud.com/cfja9'">Soundcloud</button>
+        <fieldset style="margin:15px;margin-bottom:0px;">
+<legend>About</legend>
+<label>This website is edited and operated by MTX666. This website serves to present the latest songs by MTX666.</label>
+
+        </fieldset>
+        <h3 class="footline"></h3>
+        </div>
+<!--End Contact Tab-->
+<label style="color:white;font-size:14px;text-align:center;">Copyright © 2023 MTX666. All rights reserved.</label>
 
 <style>
 .title {
 background: #0f0f0f;
 font-family:System-ui;
 }
+a {
+text-decoration: none;
+color: white;
+padding: 3px 15px 3px 15px;
+}
+.tabs {
+width:33%;
+margin:auto;
+height:20%;
+background:transparent;
+color:white;
+border-radius:8px;
+border:none;
+font-size:20px;
+font-weight:bold;
+cursor:pointer;
+}
+.tabs:hover {
+width:33%;
+margin:auto;
+height:20%;
+background:#262726;
+color:white;
+border-radius:8px;
+border:none;
+font-size:20px;
+font-weight:bold;
+cursor:pointer;
+}
 FIELDSET{
 border-radius: 10px;
-background-color:#181919;
+background-color:#222222;
 user-select:none;
 border:none;
-height:180px;
-width:500px;
+height:30%;
 margin:auto;
 color:white;
 font-size:16px;
 font-weight:bold;
 }
+.artistsfieldset{
+border-radius: 10px;
+background-color:#222222;
+user-select:none;
+border:none;
+height:30%;
+width:30%;
+margin:3px;
+color:white;
+font-size:16px;
+font-weight:bold;
+display:inline-table;
+}
+INPUT {
+border-radius:8px;
+background: #262726;
+border:none;
+font-size:20px;
+color:white;
+padding:5px;
+margin:5px;
+width:50%;
+height:10%;
+margin:auto;
+cursor:text;
+display:block;
+}
+.mailpagecss{
+border-radius: 10px;
+background-color:#3b3b3b;
+user-select:none;
+border:none;
+height:30%;
+width:40%;
+border:100% black solid;
+margin:auto;
+color:white;
+font-size:16px;
+font-weight:bold;
+position:fixed;
+text-align: center;
+justify-content: center;
+top:30%;
+left:30%;
+z-index:9999;
+box-shadow: 0 0 10px #000000;
+}
+.menupagecss{
+border-radius: 10px;
+background-color:#3b3b3b;
+user-select:none;
+border:none;
+height:60%;
+width:20%;
+border:100% black solid;
+margin:auto;
+color:white;
+font-size:16px;
+font-weight:bold;
+position:fixed;
+text-align: center;
+justify-content: center;
+top:6%;
+right:6%;
+z-index:9999;
+box-shadow: 0 0 10px #000000;
+}
 .YTmtx666 {
 background: #262726;
 border-radius:8px;
 border:none;
-width:110px;
+width:91%;
 margin:5px;
 padding:5px;
 color:white;
@@ -60,22 +287,37 @@ cursor:pointer;
 background: #262726;
 border-radius:8px;
 border:none;
-width:110px;
+width:91%;
 margin:5px;
 padding:5px;
 color:white;
 cursor:pointer;
 }
-.selectyt {
-transition: .2s;
+.selectlist {
 background: #3e3e3e;
-width:120px;
+width:20%;
 border-radius:8px;
 color:white;
 font-weight:bold;
 padding:5px;
 margin-top:5px;
 margin-bottom:5px;
+position:absolute;
+border:none;
+}
+.selectlist2 {
+background: #3e3e3e;
+width:20%;
+height:15%;
+border-radius:8px;
+color:white;
+font-weight:bold;
+padding:5px;
+margin-top:5px;
+margin-bottom:15px;
+margin-left:20px;
+position:absolute;
+border:none;
 }
 .button {
 border-radius:8px;
@@ -85,6 +327,8 @@ font-size:20px;
 color:white;
 padding:5px;
 margin:5px;
+width:15%;
+height:10%;
 cursor:pointer;
 }
 .button2 {
@@ -97,6 +341,29 @@ padding:4px;
 margin:5px;
 cursor:pointer;
 }
+.button3 {
+border-radius:8px;
+background: #363636;
+border:none;
+font-size:20px;
+color:white;
+padding:5px;
+margin:5px;
+width:40%;
+height:8%;
+cursor:pointer;
+}
+.button4 {
+border-radius:8px;
+background: transparent;
+border:none;
+font-size:14px;
+color:white;
+padding:4px;
+margin:5px;
+cursor:pointer;
+font-weight:bold;
+}
 .headline {
 font-family:System-ui;
 font-weight:bold;
@@ -108,20 +375,146 @@ color:white;
 padding:10px;
 border-bottom:1px solid;
 }
+.cate {
+font-family:System-ui;
+font-weight:bold;
+color:red;
+font-size:18px;
+text-align:center;
+margin-top:50px;
+margin-bottom:30px;
+color:white;
+padding:10px;
+}
+.footline {
+font-family:System-ui;
+font-weight:bold;
+font-size:20px;
+text-align:center;
+margin-top:50px;
+margin-bottom:30px;
+color:white;
+padding:10px;
+border-bottom:1px solid;
+}
+.footline {
+font-family:System-ui;
+font-weight:bold;
+font-size:20px;
+text-align:center;
+margin-top:30px;
+margin-bottom:30px;
+color:white;
+padding:10px;
+border-bottom:1px solid;
+}.footline2 {
+font-family:System-ui;
+font-weight:bold;
+font-size:20px;
+text-align:center;
+margin-bottom:30px;
+color:white;
+border-bottom:1px solid;
+}
 </style>
 
 <script>
-var ytselect = false;
-document.getElementById('selectanartistYT').style.display='none';
 
+    //title
+    document.getElementById('yt').title='YouTube';
+    document.getElementById('sc').title='SoundCloud';
+    document.getElementById('ig').title='Instagram';
+    document.getElementById('mail').title='E-Mail';
+
+    //Default website start
+var ytselect = false;
+var scselect = false;
+var igselect = false;
+var menupageopen = false;
+document.getElementById('selectanartistYT').style.display='none';
+document.getElementById('selectanartistSC').style.display='none';
+document.getElementById('selectanartistIG').style.display='none';
+document.getElementById('artiststab').style.display='none';
+document.getElementById('contacttab').style.display='none';
+document.getElementById('mailpage').style.display='none';
+document.getElementById('menupage').style.display='none';
+
+//Copy Text function
+function copythetext() {
+  // Get the text field
+  var copyText = document.getElementById("emailtextbox");
+
+  // Select the text field
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); // For mobile devices
+
+  // Copy the text inside the text field
+  navigator.clipboard.writeText(copyText.value);
+  document.getElementById('mailpage').style.display='none';
+
+  alert('Successfully copied to your clipboard.')
+}
+
+//AppendChilds
 document.getElementById('socialmedia').appendChild(yt);
 document.getElementById('socialmedia').appendChild(sc);
 document.getElementById('socialmedia').appendChild(ig);
-document.getElementById('socialmedia').appendChild(mail);
 document.getElementById('socialmedia').appendChild(selectanartistYT);
+document.getElementById('socialmedia').appendChild(selectanartistSC);
+document.getElementById('socialmedia').appendChild(selectanartistIG);
+document.getElementById('socialmedia').appendChild(otherssocialmedia);
 
 document.getElementById('selectanartistYT').appendChild(ytmtx666);
 document.getElementById('selectanartistYT').appendChild(ytizuna);
+document.getElementById('selectanartistSC').appendChild(scmtx666);
+document.getElementById('selectanartistSC').appendChild(scizuna);
+document.getElementById('selectanartistIG').appendChild(igmtx666);
+document.getElementById('selectanartistIG').appendChild(igizuna);
+document.getElementById('otherssocialmedia').appendChild(masterixmusicbtn);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+document.getElementById('menusymbol').addEventListener('click',function() {
+        if(menupageopen == false){
+document.getElementById('menupage').style.display='block';
+menupageopen = true;
+}
+        else if(menupageopen==true){
+                document.getElementById('menupage').style.display='none';
+                menupageopen = false;
+        }
+});
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+document.getElementById('html1').addEventListener('wheel',function() {
+document.getElementById('menupage').style.display='none';
+menupageopen = false;
+        });
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+document.getElementById('cancelmailbox').addEventListener('click',function() {
+document.getElementById('mailpage').style.display='none';
+        });
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+document.getElementById('mail').addEventListener('click',function() {
+document.getElementById('mailpage').style.display='block';
+        });
+//////////////////////////////////////////////////////////////////////////////////////////////////////  
+document.getElementById('tab1').addEventListener('click',function() {
+document.getElementById('hometab').style.display='block';
+document.getElementById('artiststab').style.display='none';
+document.getElementById('contacttab').style.display='none';
+        });
+
+        document.getElementById('tab2').addEventListener('click',function() {
+document.getElementById('contacttab').style.display='block';
+document.getElementById('artiststab').style.display='none';
+document.getElementById('hometab').style.display='none';
+        });
+
+        document.getElementById('tab3').addEventListener('click',function() {
+document.getElementById('contacttab').style.display='none';
+document.getElementById('artiststab').style.display='block';
+document.getElementById('hometab').style.display='none';
+        });
+//////////////////////////////////////////////////////////////////////////////////////////////////////  
 document.getElementById('yt').addEventListener('click',function() {
 if (ytselect == false){
 document.getElementById('selectanartistYT').style.display='block';
@@ -132,13 +525,48 @@ document.getElementById('selectanartistYT').style.display='none';
 ytselect = false;
 }
         });
-document.getElementById('selectanartistYT').addEventListener('click',function() {
+document.getElementById('ytmtx666').addEventListener('click',function() {
 
 document.getElementById('selectanartistYT').style.display='none';
+ytselect = false;
+        });
+        /*
+        document.getElementById('ytizuna').addEventListener('click',function() {
+
+document.getElementById('selectanartistYT').style.display='none';
+ytselect = false;
 
         });
+        */
+//////////////////////////////////////////////////////////////////////////////////////////////////////        
+        document.getElementById('sc').addEventListener('click',function() {
+if (scselect == false){
+document.getElementById('selectanartistSC').style.display='block';
+scselect = true;
+}
+else if (scselect == true){
+document.getElementById('selectanartistSC').style.display='none';
+scselect = false;
+}
+        });
 
+////////////////////////////////////////////////////////////////////////////////////////////////////// 
+document.getElementById('ig').addEventListener('click',function() {
+if (igselect == false){
+document.getElementById('selectanartistIG').style.display='block';
+igselect = true;
+}
+else if (igselect == true){
+document.getElementById('selectanartistIG').style.display='none';
+igselect = false;
+}
+        });
+document.getElementById('selectanartistIG').addEventListener('click',function() {
+
+document.getElementById('selectanartistIG').style.display='none';
+igselect = false;
+
+        });
 </script>
-</head>
 
 </html>
